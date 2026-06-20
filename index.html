@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>あおぞら司法書士事務所｜愛知県の会社設立・不動産登記の相談所</title>
+<meta name="description" content="愛知県の司法書士事務所。会社設立・不動産登記のご相談はお気軽に。初めての方にも分かりやすく、丁寧にご説明します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream: #FBF4EA;
+    --cream-deep: #F5EBDA;
+    --paper: #FFFCF6;
+    --apricot: #F2A65A;
+    --apricot-deep: #E08A3C;
+    --seal: #C8633A;
+    --ink: #5B4636;
+    --ink-soft: #8A7561;
+    --moss: #8FA888;
+    --line: #E8D9C2;
+    --shadow: 0 18px 40px -22px rgba(91,70,54,0.35);
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Zen Maru Gothic','Hiragino Maru Gothic ProN','Hiragino Sans',sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.9;
+    letter-spacing:0.02em;
+    overflow-x:hidden;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+
+  h1,h2,h3,.serif{
+    font-family:'Shippori Mincho', serif;
+    font-weight:700;
+    letter-spacing:0.06em;
+  }
+
+  .wrap{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  /* ===== 紙のテクスチャ風背景 ===== */
+  body{
+    background-image:
+      radial-gradient(circle at 8% 12%, rgba(242,166,90,0.10), transparent 40%),
+      radial-gradient(circle at 92% 4%, rgba(143,168,136,0.10), transparent 35%),
+      radial-gradient(circle at 50% 80%, rgba(242,166,90,0.07), transparent 45%);
+  }
+
+  /* ===== ヘッダー ===== */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(251,244,234,0.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1080px;
+    margin:0 auto;
+    padding:18px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Shippori Mincho', serif;
+    font-size:19px;
+    font-weight:700;
+    color:var(--seal);
+  }
+  .logo-mark{
+    width:38px; height:38px;
+    border-radius:50%;
+    background:linear-gradient(155deg, var(--apricot), var(--seal));
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-size:16px; font-weight:700;
+    flex-shrink:0;
+  }
+  nav{display:flex; gap:32px; align-items:center;}
+  nav a{
+    font-size:14.5px;
+    font-weight:700;
+    color:var(--ink);
+    position:relative;
+    padding:4px 0;
+  }
+  nav a::after{
+    content:'';
+    position:absolute;
+    left:0; bottom:-2px;
+    width:0; height:2px;
+    background:var(--apricot);
+    border-radius:2px;
+    transition:width 0.25s ease;
+  }
+  nav a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--seal);
+    color:#fff !important;
+    padding:11px 22px;
+    border-radius:999px;
+    box-shadow:var(--shadow);
+  }
+  .nav-cta:hover{background:var(--apricot-deep);}
+  .menu-toggle{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .menu-toggle span{display:block; width:24px; height:2px; background:var(--ink); margin:5px 0; border-radius:2px;}
+
+  /* ===== ヒーロー ===== */
+  .hero{
+    position:relative;
+    padding:84px 0 70px;
+    overflow:hidden;
+  }
+  .hero-inner{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 28px;
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:48px;
+    align-items:center;
+  }
+  .hero-eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:700;
+    color:var(--seal);
+    margin-bottom:24px;
+  }
+  .hero-eyebrow .dot{width:7px; height:7px; border-radius:50%; background:var(--moss);}
+  .hero h1{
+    font-size:clamp(32px, 4.4vw, 50px);
+    line-height:1.5;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+  .hero h1 .accent{
+    color:var(--seal);
+    white-space:nowrap;
+  }
+  .hero h1 .underline{
+    display:block;
+    width:min(260px, 65%);
+    height:auto;
+    margin:-8px 0 0;
+  }
+  .hero-sub{
+    margin-top:22px;
+    font-size:16.5px;
+    color:var(--ink-soft);
+    line-height:2;
+  }
+  .hero-sub strong{color:var(--ink); font-weight:700;}
+  .hero-ctas{
+    margin-top:34px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:16px 30px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:15px;
+    transition:transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .btn-primary{
+    background:var(--seal);
+    color:#fff;
+    box-shadow:0 14px 30px -10px rgba(200,99,58,0.55);
+  }
+  .btn-primary:hover{transform:translateY(-2px); background:var(--apricot-deep);}
+  .btn-secondary{
+    background:var(--paper);
+    color:var(--ink);
+    border:1.5px solid var(--line);
+  }
+  .btn-secondary:hover{transform:translateY(-2px); border-color:var(--apricot);}
+  .hero-note{
+    margin-top:18px;
+    font-size:13px;
+    color:var(--ink-soft);
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+
+  /* ヒーローのイラスト：朱印（はんこ）モチーフ + 会話の吹き出し */
+  .hero-art{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero-art svg{width:100%; max-width:420px; height:auto;}
+
+  /* ===== セクション共通 ===== */
+  section{padding:96px 0;}
+  .section-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+  }
+  .section-eyebrow{
+    font-size:13px;
+    font-weight:700;
+    color:var(--moss);
+    letter-spacing:0.18em;
+    margin-bottom:14px;
+    display:block;
+  }
+  .section-head h2{
+    font-size:clamp(26px, 3.4vw, 36px);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  .section-head p{
+    margin-top:18px;
+    color:var(--ink-soft);
+    font-size:15.5px;
+  }
+
+  /* ===== 共感パート（悩み） ===== */
+  .worry{
+    background:var(--paper);
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+  }
+  .worry-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+  }
+  .worry-card{
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:24px;
+    padding:30px 28px;
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .worry-card .icon{
+    flex-shrink:0;
+    width:52px; height:52px;
+    border-radius:50%;
+    background:#fff;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .worry-card p{font-size:15.5px; color:var(--ink); font-weight:500; line-height:1.8;}
+  .worry-foot{
+    text-align:center;
+    margin-top:40px;
+    font-size:16px;
+    font-weight:700;
+    color:var(--seal);
+  }
+
+  /* ===== 解決提示 ===== */
+  .solution{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:56px;
+    align-items:center;
+  }
+  .solution-art svg{width:100%; height:auto;}
+  .solution-text h2{
+    font-size:clamp(24px, 3vw, 32px);
+    line-height:1.7;
+    margin-bottom:24px;
+  }
+  .solution-text p{color:var(--ink-soft); font-size:15.5px; margin-bottom:16px;}
+  .solution-callout{
+    margin-top:28px;
+    background:var(--cream-deep);
+    border-left:4px solid var(--apricot);
+    border-radius:16px;
+    padding:22px 26px;
+    font-size:15px;
+    font-weight:500;
+    color:var(--ink);
+  }
+
+  /* ===== 強み ===== */
+  .strengths{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .strengths-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px;
+  }
+  .strength-card{
+    text-align:center;
+    padding:40px 26px;
+    background:var(--cream);
+    border-radius:28px;
+    border:1px solid var(--line);
+    transition:transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .strength-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
+  .strength-num{
+    width:64px; height:64px;
+    margin:0 auto 22px;
+    border-radius:50%;
+    background:linear-gradient(155deg, var(--apricot), var(--seal));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .strength-card h3{font-size:18px; margin-bottom:14px; color:var(--ink);}
+  .strength-card p{font-size:14.5px; color:var(--ink-soft);}
+
+  /* ===== サービス ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:28px;
+  }
+  .service-card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .service-top{
+    padding:34px 34px 0;
+  }
+  .service-tag{
+    display:inline-block;
+    font-size:12.5px;
+    font-weight:700;
+    background:var(--cream-deep);
+    color:var(--seal);
+    padding:6px 14px;
+    border-radius:999px;
+    margin-bottom:16px;
+  }
+  .service-card h3{font-size:21px; margin-bottom:12px;}
+  .service-card p{font-size:14.5px; color:var(--ink-soft); margin-bottom:24px;}
+  .service-art{padding:0 24px;}
+  .service-art svg{width:100%; height:auto;}
+  .service-link{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:18px 34px;
+    background:var(--cream-deep);
+    font-weight:700;
+    font-size:14.5px;
+    color:var(--seal);
+  }
+
+  /* ===== 流れ ===== */
+  .flow{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .flow-list{
+    position:relative;
+    max-width:760px;
+    margin:0 auto;
+  }
+  .flow-list::before{
+    content:'';
+    position:absolute;
+    left:31px;
+    top:14px;
+    bottom:14px;
+    width:2px;
+    background:repeating-linear-gradient(to bottom, var(--apricot) 0, var(--apricot) 6px, transparent 6px, transparent 13px);
+  }
+  .flow-item{
+    position:relative;
+    display:flex;
+    gap:26px;
+    padding:0 0 44px 0;
+  }
+  .flow-item:last-child{padding-bottom:0;}
+  .flow-num{
+    flex-shrink:0;
+    width:64px; height:64px;
+    border-radius:50%;
+    background:var(--cream);
+    border:2px solid var(--apricot);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Shippori Mincho', serif;
+    font-size:22px;
+    font-weight:700;
+    color:var(--seal);
+    z-index:1;
+  }
+  .flow-item.is-last .flow-num{background:var(--seal); border-color:var(--seal); color:#fff;}
+  .flow-body{padding-top:10px;}
+  .flow-body h3{font-size:17.5px; margin-bottom:8px; color:var(--ink);}
+  .flow-body p{font-size:14.5px; color:var(--ink-soft);}
+
+  /* ===== 代表メッセージ ===== */
+  .rep{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:56px;
+    align-items:center;
+  }
+  .rep-photo{
+    position:relative;
+  }
+  .rep-photo svg{width:100%; height:auto;}
+  .rep-name-badge{
+    position:absolute;
+    bottom:-18px; right:-12px;
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:16px 22px;
+    box-shadow:var(--shadow);
+  }
+  .rep-name-badge .role{font-size:12px; color:var(--ink-soft); font-weight:700;}
+  .rep-name-badge .name{font-family:'Shippori Mincho',serif; font-size:18px; font-weight:700; color:var(--ink); margin-top:2px;}
+  .rep-text .quote-mark{font-size:48px; color:var(--apricot); font-family:'Shippori Mincho',serif; line-height:1; margin-bottom:6px;}
+  .rep-text p{font-size:15.5px; color:var(--ink); margin-bottom:18px;}
+  .rep-text p.lead{font-size:17px; font-weight:700; line-height:1.9;}
+  .rep-sign{margin-top:28px; font-family:'Shippori Mincho',serif; font-size:15px; color:var(--ink-soft);}
+
+  /* ===== FAQ ===== */
+  .faq{background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .faq-list{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:16px;}
+  .faq-item{
+    background:var(--cream);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:26px 30px;
+  }
+  .faq-q{display:flex; gap:14px; align-items:flex-start; font-weight:700; font-size:15.5px; color:var(--ink); margin-bottom:12px;}
+  .faq-q .qa-mark{
+    flex-shrink:0;
+    width:30px; height:30px;
+    border-radius:50%;
+    background:var(--seal);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Shippori Mincho',serif;
+    font-size:14px;
+  }
+  .faq-a{display:flex; gap:14px; align-items:flex-start; font-size:14.5px; color:var(--ink-soft); padding-left:0;}
+  .faq-a .qa-mark{
+    flex-shrink:0;
+    width:30px; height:30px;
+    border-radius:50%;
+    background:var(--moss);
+    color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Shippori Mincho',serif;
+    font-size:14px;
+  }
+
+  /* ===== 最終CTA ===== */
+  .final-cta{
+    position:relative;
+    border-radius:40px;
+    background:linear-gradient(155deg, #F6CFA0, #E89A5C 70%);
+    padding:70px 50px;
+    text-align:center;
+    overflow:hidden;
+    margin:0 28px;
+    max-width:1024px;
+    margin:0 auto;
+  }
+  .final-cta::before{
+    content:'';
+    position:absolute;
+    top:-60px; right:-60px;
+    width:220px; height:220px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.18);
+  }
+  .final-cta::after{
+    content:'';
+    position:absolute;
+    bottom:-80px; left:-40px;
+    width:260px; height:260px;
+    border-radius:50%;
+    background:rgba(255,255,255,0.12);
+  }
+  .final-cta h2{
+    position:relative;
+    font-size:clamp(26px, 3.6vw, 36px);
+    color:#fff;
+    line-height:1.6;
+    margin-bottom:18px;
+  }
+  .final-cta p{
+    position:relative;
+    color:rgba(255,255,255,0.92);
+    font-size:16px;
+    margin-bottom:36px;
+  }
+  .final-ctas{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .final-cta .btn-primary{background:#fff; color:var(--seal); box-shadow:0 16px 32px -10px rgba(0,0,0,0.25);}
+  .final-cta .btn-primary:hover{background:#FFF8EF;}
+  .final-cta .btn-secondary{background:transparent; color:#fff; border-color:rgba(255,255,255,0.6);}
+  .final-cta .btn-secondary:hover{border-color:#fff; background:rgba(255,255,255,0.1);}
+
+  /* ===== フッター ===== */
+  footer{padding:64px 0 36px; color:var(--ink-soft); font-size:13.5px;}
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:40px;
+    border-bottom:1px solid var(--line);
+  }
+  .footer-logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Shippori Mincho',serif;
+    font-size:18px; font-weight:700; color:var(--seal);
+    margin-bottom:14px;
+  }
+  footer h4{font-size:13.5px; color:var(--ink); margin-bottom:16px; font-weight:700;}
+  footer li{margin-bottom:10px;}
+  footer a:hover{color:var(--seal);}
+  .footer-bottom{padding-top:28px; text-align:center; font-size:12.5px;}
+
+  /* ===== レスポンシブ ===== */
+  @media (max-width:860px){
+    nav{position:fixed; top:73px; left:0; right:0; background:var(--paper); flex-direction:column; padding:24px 28px; gap:20px; border-bottom:1px solid var(--line); transform:translateY(-130%); opacity:0; transition:all 0.3s ease; pointer-events:none;}
+    nav.open{transform:translateY(0); opacity:1; pointer-events:auto;}
+    .menu-toggle{display:block;}
+    .hero-inner{grid-template-columns:1fr; text-align:center;}
+    .hero-ctas{justify-content:center;}
+    .hero-art{order:-1; max-width:280px; margin:0 auto;}
+    .hero h1 .underline{margin-left:auto; margin-right:auto;}
+    .worry-grid{grid-template-columns:1fr;}
+    .solution{grid-template-columns:1fr;}
+    .solution-art{max-width:280px; margin:0 auto;}
+    .strengths-grid{grid-template-columns:1fr;}
+    .services-grid{grid-template-columns:1fr;}
+    .rep{grid-template-columns:1fr;}
+    .rep-photo{max-width:300px; margin:0 auto 30px;}
+    .footer-grid{grid-template-columns:1fr; gap:28px;}
+    section{padding:64px 0;}
+    .final-cta{padding:50px 26px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+
+  :focus-visible{
+    outline:3px solid var(--apricot-deep);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+
+  .sp-only{display:none;}
+  @media (max-width:600px){
+    .sp-only{display:inline;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">青</span>
+      あおぞら司法書士事務所
+    </a>
+    <nav id="nav">
+      <a href="#worry">お悩み</a>
+      <a href="#service">サービス</a>
+      <a href="#flow">相談の流れ</a>
+      <a href="#rep">代表紹介</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#contact" class="nav-cta">無料相談はこちら</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== ヒーロー ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow"><span class="dot"></span>愛知県の会社設立・不動産登記サポート</span>
+        <h1>
+          はじめての手続きでも、<br>
+          <span class="accent">大丈夫です。</span>
+          <svg class="underline" viewBox="0 0 220 16" preserveAspectRatio="none" aria-hidden="true"><path d="M2 10 C 50 2, 170 2, 218 10" stroke="#F2A65A" stroke-width="6" fill="none" stroke-linecap="round"/></svg>
+        </h1>
+        <p class="hero-sub">
+          愛知県で会社設立・不動産登記をサポートしています。<br>
+          <strong>分からないままでも大丈夫。</strong>まずはお気軽にご相談ください。<br>
+          ひとつひとつ、ゆっくりご一緒に進めていきましょう。
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">無料相談はこちら</a>
+          <a href="tel:0120000000" class="btn btn-secondary">📞 お電話でもご相談いただけます</a>
+        </div>
+        <p class="hero-note">まずはお話だけでも大丈夫です。押し売りは一切いたしません。</p>
+      </div>
+
+      <div class="hero-art">
+        <img src="images/logo.png" alt="あおぞら司法書士事務所 ロゴ" style="width:100%;max-width:420px;height:auto;display:block;margin:0 auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 共感パート ===== -->
+  <section class="worry" id="worry">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">EMPATHY</span>
+        <h2>こんなお悩みは<br class="sp-only">ありませんか？</h2>
+        <p>はじめての方の多くが、同じような不安を抱えています。<br>あなただけではありません。</p>
+      </div>
+
+      <div class="worry-grid">
+        <div class="worry-card">
+          <span class="icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 18h.01M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4" stroke="#E08A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>何から始めればいいか<br>分からない</p>
+        </div>
+        <div class="worry-card">
+          <span class="icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 9v4m0 4h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" stroke="#E08A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>手続きが難しそうで<br>不安</p>
+        </div>
+        <div class="worry-card">
+          <span class="icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#E08A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>費用がどれくらいか<br>かるのか心配</p>
+        </div>
+        <div class="worry-card">
+          <span class="icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0" stroke="#E08A3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <p>専門家に相談するのは<br>少しハードルが高い</p>
+        </div>
+      </div>
+
+      <p class="worry-foot">ひとつでも当てはまる方は、安心してご相談ください。</p>
+    </div>
+  </section>
+
+  <!-- ===== 解決提示 ===== -->
+  <section>
+    <div class="wrap solution">
+      <div class="solution-art" aria-hidden="true">
+        <svg viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="20" width="320" height="320" rx="36" fill="#F5EBDA"/>
+          <!-- 本のイラスト -->
+          <path d="M80 110 q90 -30 200 0 v160 q-110 -28 -200 0 Z" fill="#fff" stroke="#E8D9C2" stroke-width="3"/>
+          <path d="M180 110 v160" stroke="#E8D9C2" stroke-width="2"/>
+          <path d="M100 150 q40 -10 70 -2" stroke="#F2A65A" stroke-width="4" stroke-linecap="round"/>
+          <path d="M100 175 q40 -10 70 -2" stroke="#F2A65A" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+          <path d="M190 150 q40 -10 70 -2" stroke="#8FA888" stroke-width="4" stroke-linecap="round"/>
+          <path d="M190 175 q40 -10 70 -2" stroke="#8FA888" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+          <!-- ハートのチェックマーク -->
+          <circle cx="180" cy="80" r="26" fill="#C8633A"/>
+          <path d="M170 80 l8 8 16 -16" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="solution-text">
+        <h2>難しい手続きも、<br>分かりやすく丁寧に<br>ご説明します。</h2>
+        <p>当事務所では、専門用語をできるだけ使わず、初めての方でも理解できるようにお話しします。</p>
+        <p>「こんなこと聞いてもいいのかな？」という内容でも大丈夫です。ひとつひとつ、一緒に解決していきましょう。</p>
+        <div class="solution-callout">
+          法律の話は、難しい言葉が多くて当然です。<br>分からないことは、分かるまで何度でもお聞きください。
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 強み ===== -->
+  <section class="strengths">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">WHY US</span>
+        <h2>選ばれている理由</h2>
+      </div>
+      <div class="strengths-grid">
+        <div class="strength-card">
+          <div class="strength-num" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>親身に寄り添う対応</h3>
+          <p>お客様の状況やお気持ちを大切にしながら、丁寧に対応します。</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>分かりやすい説明</h3>
+          <p>専門用語を使わず、誰でも理解できる説明を心がけています。</p>
+        </div>
+        <div class="strength-card">
+          <div class="strength-num" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>手続き後も安心の<br>アフターフォロー</h3>
+          <p>手続きが終わった後も、継続してサポートいたします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== サービス ===== -->
+  <section id="service">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">SERVICE</span>
+        <h2>対応サービス</h2>
+        <p>会社設立も不動産登記も、はじめの一歩からご一緒します。</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-top">
+            <span class="service-tag">会社設立</span>
+            <h3>これから事業を始める方へ</h3>
+            <p>設立手続きをサポートします。書類の準備から登記まで、スムーズなスタートを一緒に進めていきます。</p>
+          </div>
+          <div class="service-art" aria-hidden="true">
+            <svg viewBox="0 0 300 140" fill="none">
+              <rect x="40" y="36" width="90" height="84" rx="8" fill="#F5EBDA"/>
+              <rect x="55" y="52" width="60" height="7" rx="3.5" fill="#F2A65A"/>
+              <rect x="55" y="68" width="45" height="7" rx="3.5" fill="#E8D9C2"/>
+              <rect x="55" y="84" width="50" height="7" rx="3.5" fill="#E8D9C2"/>
+              <circle cx="100" cy="106" r="11" fill="none" stroke="#C8633A" stroke-width="2.5"/>
+              <text x="100" y="110" text-anchor="middle" font-family="Shippori Mincho, serif" font-size="10" font-weight="700" fill="#C8633A">印</text>
+              <!-- 右肩上がりの成長線 -->
+              <path d="M160 110 L190 88 L212 100 L245 60" stroke="#8FA888" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="245" cy="60" r="7" fill="#8FA888"/>
+              <circle cx="240" cy="95" r="34" fill="#C8633A" opacity="0.10"/>
+            </svg>
+          </div>
+          <a href="#contact" class="service-link">詳しくはこちら（サービスページへ） <span>→</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-top">
+            <span class="service-tag">不動産登記</span>
+            <h3>売買・相続のお手続き</h3>
+            <p>売買・相続などの登記手続きを、正確かつ丁寧に対応します。複雑な相続関係も整理してご説明します。</p>
+          </div>
+          <div class="service-art" aria-hidden="true">
+            <svg viewBox="0 0 300 140" fill="none">
+              <path d="M150 30 70 85h160Z" fill="#F2A65A" opacity="0.85"/>
+              <rect x="85" y="85" width="130" height="42" fill="#F5EBDA"/>
+              <rect x="135" y="95" width="30" height="32" fill="#fff"/>
+              <rect x="100" y="95" width="20" height="20" fill="#fff"/>
+              <rect x="180" y="95" width="20" height="20" fill="#fff"/>
+              <circle cx="245" cy="55" r="20" fill="#8FA888" opacity="0.18"/>
+              <path d="M235 55 l8 8 14 -16" stroke="#8FA888" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <a href="#contact" class="service-link">詳しくはこちら（サービスページへ） <span>→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 相談の流れ ===== -->
+  <section class="flow" id="flow">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">FLOW</span>
+        <h2>ご相談から完了までの流れ</h2>
+        <p>はじめてでも迷わないよう、ひとつずつ丁寧にご案内します。</p>
+      </div>
+      <div class="flow-list">
+        <div class="flow-item">
+          <div class="flow-num">1</div>
+          <div class="flow-body">
+            <h3>お問い合わせ</h3>
+            <p>まずはお気軽にご連絡ください。電話でもメールでも、どちらでも大丈夫です。</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">2</div>
+          <div class="flow-body">
+            <h3>ご相談（無料）</h3>
+            <p>状況をお伺いし、分かりやすくご説明します。分からないことはその場でご質問ください。</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">3</div>
+          <div class="flow-body">
+            <h3>お見積もり</h3>
+            <p>内容に応じて費用をご案内します。事前にしっかりご説明しますので、安心してご検討いただけます。</p>
+          </div>
+        </div>
+        <div class="flow-item">
+          <div class="flow-num">4</div>
+          <div class="flow-body">
+            <h3>手続き開始</h3>
+            <p>ご納得いただいてから着手します。進捗もこまめにご報告しますので、安心してお任せください。</p>
+          </div>
+        </div>
+        <div class="flow-item is-last">
+          <div class="flow-num">5</div>
+          <div class="flow-body">
+            <h3>完了・アフターフォロー</h3>
+            <p>手続き後も、何かあればいつでもご連絡ください。継続してサポートいたします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 代表メッセージ ===== -->
+  <section id="rep">
+    <div class="wrap rep">
+      <div class="rep-photo" aria-hidden="true">
+        <svg viewBox="0 0 320 360" fill="none">
+          <rect x="10" y="10" width="300" height="340" rx="32" fill="#F5EBDA"/>
+          <circle cx="160" cy="145" r="86" fill="#F2A65A" opacity="0.16"/>
+          <!-- 体（羽織のようなシルエット） -->
+          <path d="M88 320 q4 -64 26 -84 q20 -16 46 -16 q26 0 46 16 q22 20 26 84 Z" fill="#8FA888"/>
+          <path d="M150 222 q10 6 20 0 l6 18 q-16 8 -32 0 Z" fill="#fff" opacity="0.85"/>
+          <!-- 首 -->
+          <rect x="148" y="190" width="24" height="26" rx="10" fill="#E8B98A"/>
+          <!-- 顔 -->
+          <circle cx="160" cy="158" r="54" fill="#F0C49A"/>
+          <!-- 髪 -->
+          <path d="M106 150 a54 54 0 0 1 108 0 q0 -34 -54 -38 q-54 4 -54 38 Z" fill="#5B4636"/>
+          <path d="M106 150 q-4 26 8 40 q-10 -22 -2 -40 Z" fill="#5B4636"/>
+          <path d="M214 150 q4 26 -8 40 q10 -22 2 -40 Z" fill="#5B4636"/>
+          <!-- 表情 -->
+          <circle cx="142" cy="160" r="4.5" fill="#5B4636"/>
+          <circle cx="178" cy="160" r="4.5" fill="#5B4636"/>
+          <path d="M140 182 q20 16 40 0" stroke="#5B4636" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+          <path d="M126 142 q8 -6 18 -2" stroke="#5B4636" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M194 142 q-8 -6 -18 -2" stroke="#5B4636" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <!-- 小さな装飾 -->
+          <circle cx="248" cy="80" r="8" fill="#F2A65A" opacity="0.5"/>
+          <circle cx="70" cy="280" r="6" fill="#C8633A" opacity="0.4"/>
+        </svg>
+        <div class="rep-name-badge">
+          <div class="role">代表司法書士</div>
+          <div class="name">山田　太郎</div>
+        </div>
+      </div>
+      <div class="rep-text">
+        <span class="section-eyebrow">MESSAGE</span>
+        <div class="quote-mark">“</div>
+        <p class="lead">誰でも気軽に相談できる場所でありたい。それが、私たちの一番の願いです。</p>
+        <p>はじめまして。当事務所のホームページをご覧いただきありがとうございます。</p>
+        <p>司法書士というと「堅い」「相談しづらい」といったイメージを持たれる方も多いと思います。だからこそ、当事務所では「誰でも気軽に相談できる場所」であることを大切にしています。</p>
+        <p>分からないこと、不安なこと、どんな小さなことでも構いません。安心してお話しいただけるよう、丁寧に対応いたします。</p>
+        <p>どうぞお気軽にご相談ください。</p>
+        <p class="rep-sign">あおぞら司法書士事務所　代表　山田 太郎</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">FAQ</span>
+        <h2>よくある質問</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q"><span class="qa-mark">Q</span>相談だけでも大丈夫ですか？</div>
+          <div class="faq-a"><span class="qa-mark">A</span>はい、大丈夫です。まずはお話をお聞かせください。契約を急かすことはありません。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span class="qa-mark">Q</span>費用はどれくらいかかりますか？</div>
+          <div class="faq-a"><span class="qa-mark">A</span>内容によって異なりますので、事前にしっかりご説明いたします。納得いただいてから手続きを進めます。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><span class="qa-mark">Q</span>何も分からない状態でも大丈夫ですか？</div>
+          <div class="faq-a"><span class="qa-mark">A</span>もちろん大丈夫です。初めての方にも分かりやすくご案内しますので、安心してご相談ください。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 最終CTA ===== -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="final-cta">
+        <h2>まずはお話だけでも<br>大丈夫です。</h2>
+        <p>「何から始めればいいか分からない」<br>そんな状態でも問題ありません。お気軽にご相談ください。</p>
+        <div class="final-ctas">
+          <a href="#" class="btn btn-primary">無料相談はこちら</a>
+          <a href="tel:0120000000" class="btn btn-secondary">📞 お電話でのご相談はこちら</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo"><span class="logo-mark" style="width:32px;height:32px;font-size:14px;">青</span>あおぞら司法書士事務所</div>
+        <p>愛知県内で会社設立・不動産登記のご相談を承っております。はじめての方も、お気軽にどうぞ。</p>
+      </div>
+      <div>
+        <h4>メニュー</h4>
+        <ul>
+          <li><a href="#worry">こんなお悩みありませんか</a></li>
+          <li><a href="#service">対応サービス</a></li>
+          <li><a href="#flow">相談の流れ</a></li>
+          <li><a href="#rep">代表紹介</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li>愛知県名古屋市◯◯区◯◯ 1-2-3</li>
+          <li>TEL：0120-000-000</li>
+          <li>受付：平日 9:00〜18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="sp-only-hide">©</span> 2026 あおぞら司法書士事務所 All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('nav');
+  menuToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
